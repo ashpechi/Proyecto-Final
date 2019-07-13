@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/publicaciones.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <title>Orquesta Zaperoko</title>
+
+
+</head>
+<body>
+
+    <header class="header">
+
+        <div id="container">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="publicaciones.html">Publicaciones</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="inicio_sesion.html">INICIAR SESIÓN</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+        <div class="publicaciones">
+            <ul class="list-image">
+                <li><img src="publicaciones/1.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/2.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/3.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/4.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/5.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/6.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/7.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/8.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/9.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/10.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/11.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/12.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/13.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/14.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/15.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/16.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/17.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/18.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/19.png" alt="" class="image" /></li>
+                <li><img src="publicaciones/20.png" alt="" class="image" /></li>
+            </ul>
+        </div>
+
+        <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/zaperoko2.png">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <form action="index.html"
+                              method="POST"
+                              id="tmContactForm"
+                              class="tm-bg-white-transparent">
+                            <div class="form-group">
+                                <input type="text"
+                                       id="contact_name"
+                                       name="contact_name"
+                                       class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                       placeholder="Nombre"
+                                       required />
+                            </div>
+                            <div class="form-group">
+                                <input type="email"
+                                       id="contact_email"
+                                       name="contact_email"
+                                       class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                       placeholder="Email"
+                                       required />
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="4"
+                                          id="contact_message"
+                                          name="contact_message"
+                                          class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                          placeholder="Escríbenos un mensaje, consulta, sugerencia o queja."
+                                          required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit"
+                                        class="btn tm-btn-submit rounded-0 text-white">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <footer class="col-12">
+                        <p class="text-center tm-copyright-text">
+                            Copyright 2019 Ashley Peña - Miguel Chozo
+                    </footer>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script>
+            function detectMsBrowser() {
+                using_ms_browser =
+                    navigator.appName == "Microsoft Internet Explorer" ||
+                    (navigator.appName == "Netscape" &&
+                        navigator.appVersion.indexOf("Edge") > -1) ||
+                    (navigator.appName == "Netscape" &&
+                        navigator.appVersion.indexOf("Trident") > -1);
+
+                if (using_ms_browser == true) {
+                    alert(
+                        "¡Usar ordenador Chrome o Firefox para una mejor experencia!"
+                    );
+                }
+            }
+            function setBrandMarginTop() {
+                var bottomContainerHeight = $(".tm-welcome-container").height();
+
+                $(".tm-brand-container-outer").css({
+                    "margin-top": -bottomContainerHeight + "px"
+                });
+            }
+
+            $(function () {
+                setBrandMarginTop();
+                detectMsBrowser();
+
+
+                $(window).resize(function () {
+                    setBrandMarginTop();
+                });
+            });
+        </script>
+</body>
+</html>

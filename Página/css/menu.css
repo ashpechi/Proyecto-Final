@@ -1,0 +1,36 @@
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.header {
+    background-color:lightpink;
+    color:black;
+    height:50px;
+}
+
+.header a{
+    color: black;
+    text-decoration:none;
+}
+
+.navigation ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding:0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius:5px;
+}
+
+    .navigation ul li a:hover{
+        background-color:darksalmon;
+    }

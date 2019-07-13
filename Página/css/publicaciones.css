@@ -1,0 +1,17 @@
+.publicaciones {
+    position: relative;
+    background-image: url(img/portafolio.jpg);
+}
+
+    .publicaciones .list-image {
+        margin-left: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+        .publicaciones .list-image li img {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }

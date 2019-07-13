@@ -1,0 +1,24 @@
+#tabla {
+    margin: 150px auto;
+    width: 600px;
+}
+
+table{
+    background-color:lightgray;
+    color:black;
+    text-align:left;
+    border-collapse:collapse;
+    width:100%;
+}
+
+th,td{
+    padding:15px;
+    font-size:25px;
+    border: solid 1px white;
+}
+
+thead{
+    background-color:black;
+    border-bottom:solid 5px #808080;
+    color:white;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/inicio_sesion.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <title>Orquesta Zaperoko</title>
+
+
+</head>
+<body>
+
+    <header class="header">
+        
+        <div id="container">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="publicaciones.html">Publicaciones</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="inicio_sesion.html">INICIAR SESIÓN</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/sesion.png">
+        <div class="contenedor-form">
+
+            <div class="formulario">
+                <h2>Iniciar Sesión</h2>
+                <form action="#">
+                    <input type="text" placeholder="Usuario" required /><br />
+                    <input type="password" placeholder="Contraseña" required /><br />
+                    <input type="submit" value="Iniciar Sesión" />
+                </form>
+            </div>
+        </div>
+</section>
+
+
+
+        <div class="row">
+            <footer class="col-12">
+                <p class="text-center tm-copyright-text">
+                    Copyright 2019 Ashley Peña - Miguel Chozo
+            </footer>
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script>
+            function detectMsBrowser() {
+                using_ms_browser =
+                    navigator.appName == "Microsoft Internet Explorer" ||
+                    (navigator.appName == "Netscape" &&
+                        navigator.appVersion.indexOf("Edge") > -1) ||
+                    (navigator.appName == "Netscape" &&
+                        navigator.appVersion.indexOf("Trident") > -1);
+
+                if (using_ms_browser == true) {
+                    alert(
+                        "¡Usar ordenador Chrome o Firefox para una mejor experencia!"
+                    );
+                }
+            }
+            function setBrandMarginTop() {
+                var bottomContainerHeight = $(".tm-welcome-container").height();
+
+                $(".tm-brand-container-outer").css({
+                    "margin-top": -bottomContainerHeight + "px"
+                });
+            }
+
+            $(function () {
+                setBrandMarginTop();
+                detectMsBrowser();
+
+
+                $(window).resize(function () {
+                    setBrandMarginTop();
+                });
+            });
+        </script>
+</body>
+</html>
